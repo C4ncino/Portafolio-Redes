@@ -1,0 +1,440 @@
+:root{
+    --primary: #53ac59;
+    --secondary:#03484c;
+    --tertiary: #3b8952;
+    --mid: #0f684b;
+    --light: #eeeeee;
+    --dark: #1c232e;
+}
+*::selection{
+    color: var(--primary);
+    background-color: var(--dark);
+}
+/*-------------------------
+-----------Navbar----------
+-------------------------*/
+nav {
+    height: auto;
+    z-index: 99;
+    background-color: var(--dark);
+    padding: 16px 32px;
+}
+nav .container{
+    max-width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+nav h1{
+    color: var(--light);
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.btn {
+    display: block;
+    position: relative;
+    z-index: 1;
+    background-color: none;
+}
+nav .btn span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    background-color: var(--light);
+    border-radius: 6px;
+    z-index: 1;
+    transform-origin: 0 0;
+    transition: 0.4s;
+}
+nav .btn:hover span:nth-child(2){
+    transform: translateX(10px);
+    background-color: var(--primary);
+}
+nav .btn.is-active span:nth-child(1){
+    transform:  translate(0px, -2px) rotate(45deg);
+}
+nav .btn.is-active span:nth-child(3){
+    transform:  translate(-3px, 3px) rotate(-45deg);
+}
+nav .btn.is-active span:nth-child(2){
+    opacity: 0;
+    transform: translateX(15px);
+}
+nav .btn.is-active:hover span{
+    background-color: var(--primary);
+}
+.menu{
+    display: none;
+    flex: 1 1 0%;
+    justify-content: flex-end;
+    margin: 0 -16px;
+}
+.a{
+    color: var(--light);
+    
+    margin: 0 16px;
+    padding: 8px 16px;
+
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.4s;
+    border-radius: 99px;
+    text-align: center;
+} 
+.a.is-active, .a:hover{
+    background-color: var(--primary);
+}
+/*-------------------------
+-----------General---------
+-------------------------*/
+div{
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+p, h1, h2, h3, p, li{
+    color: var(--light);
+}
+/*-------------------------
+----------Welcome----------
+-------------------------*/
+.welcome{
+    background-color: var(--secondary);
+    padding: 20px 32px;
+}
+.welcome h1{
+    font-size: 24px;
+    font-weight: 800;
+}
+.welcome p{
+    padding: 0px 100px;
+}
+/*-------------------------
+-----------About-----------
+-------------------------*/
+.about{
+    background-color: var(--dark);
+    padding: 25px 30px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: auto auto auto auto auto;
+    justify-content: center;
+}
+.about h1{
+    grid-area: 1 / 1 / 1 / 1;
+    font-size: 24;
+    text-align: left;
+    padding-left: 10px;
+}
+.about p{
+    grid-area: 2 / 1 / 3 / 3;
+    text-align: justify;
+    padding: 10px;
+}
+.about .img-container{
+    width: 100%;
+    height: 100%;
+    grid-area: 3 / 1 / 3 / 3;
+    padding: 30px 20px;
+}
+.my-photo{
+    border: #000 solid 5px;
+    /* display: none; */
+    border-radius: 20px;
+    box-shadow: var(--secondary) 0.5rem 0 0.5rem;
+    max-width: 100%;
+    max-height: 100%;
+    /* content: url(/images/About/Yo.jpg); */
+}
+.about h2{
+    grid-area: 4 / 1 / 5 / 3;
+    padding: 15px 0 25px 15px;
+    font-size: 24px;
+    text-align: left;
+}
+.carrusel{
+    grid-area: 5 / 1 / 6 / 3;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+.card.A{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 10px 1fr 1fr;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+
+    height: 140px;
+    width: 120px;
+    background-color: var(--secondary);
+    border-radius: 40px;
+    box-shadow: -2rem 0 3rem var(--dark);
+
+    transition: 0.4s ease-out;
+    position: relative;
+}
+.card.A:hover {
+    z-index: 99;
+    transform: translateY(-10px);
+    transition: 0.4s ease-out;
+}
+.card.A:not(:first-child) {
+    margin-left: -80px;
+}
+.card.A:hover ~ .card.A {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+}
+.card.A h3{
+    grid-area: 1 / 1 / 2 / 3;
+    color: var(--light);
+    font-weight: 400;
+    text-align: center;
+}
+.bar {
+    grid-area: 2 / 1 / 3 / 3;
+    position: absolute;
+    height: 5px;
+    width: 90px;
+}
+.emptybar {
+    background-color: var(--dark);
+    width: 100%;
+    height: 100%;
+}
+.filledbar {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: var(--primary);
+    background: linear-gradient(90deg, var(--primary) 0%,var(--mid) 35%, var(--dark) 100%);
+    transition: 0.6s ease-out;
+}
+.card.A:hover .filledbar {
+    width: 90px;
+    transition: 0.4s ease-out;
+}
+.card-img{
+    display: none;
+    grid-area: 3 / 1 / 5 / 3;
+    /* border: 1px solid wheat; */
+    width: auto;
+    height: 100px;
+    padding: 10px 25px;
+
+}
+.card.A:hover .card-img{
+    display: block;
+}
+/*-------------------------
+-----Homework and Lab------
+-------------------------*/
+.homework{
+    background-color: var(--mid);
+    display: grid;
+    grid-template-columns: 2fr 5fr 5fr 2fr;
+    grid-template-rows: 60px 100px 160px;
+    padding: 25px 10px;
+}
+.homework h1{
+    grid-area: 1 / 2 / 2 / 4;
+    font-size: 24;
+    text-align: center;
+}
+.homework p{
+    grid-area: 2 / 2 / 3 / 4;
+    text-align: center;
+    padding: 10px;
+}
+.hw-btn {
+    margin: 10px;
+    /* border: 2px solid var(--dark); */
+    border-radius: 15px;
+}
+.hw-btn a{
+    text-decoration: none;
+}
+.hw-btn.HW{
+    grid-area: 3 / 2 / 4 / 3;
+}
+.hw-btn.Lab{
+    grid-area: 3 / 3 / 4 / 4;
+}
+.homework button{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px 1fr 1fr;
+    
+    height: 100%;
+    width: 100%;
+
+    box-shadow: 15PX 0 20PX var(--secondary);
+    border-radius: 30px;
+}
+.btnH img{
+    padding: 10px;
+    grid-area: 2 / 1 / 4 / 3;
+    align-self: center;
+    justify-self: center;
+    max-height: 100%;
+    max-width: 100%;
+}
+.btnH h2{
+    grid-area: 1 / 1 / 2 / 3;
+    padding-top: 10PX;
+    font-size: 20PX;
+
+}
+.btnH.A:hover img{
+    content: url(/public/images/HW/HW.png);
+}
+.btnH.B:hover img{
+    content: url(/public/images/HW/Lab-B.png);
+}
+/*-------------------------
+---------Proyects----------
+-------------------------*/
+.final-projects{
+    background-color: var(--secondary);
+    padding: 25px 80px;
+}
+.final-projects h1{
+    font-size: 20;
+    font-weight: 900;
+}
+.final-projects button{
+    background-color: var(--dark);
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 120px;
+    color: var(--tertiary);
+    font-size: 20px;
+    font-weight: 700;
+}
+.final-projects button:hover{
+    color: var(--dark);
+    background-color: var(--tertiary);
+}
+/*-------------------------
+-----------Footer----------
+-------------------------*/
+footer {
+    max-width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    background: var(--dark);
+}
+/*-------------------------
+---------Responsive--------
+-------------------------*/
+@media (min-width: 900px) {
+    nav .btn{
+        display: none;
+    }
+    .menu{
+        display: flex;
+    }
+}
+@media (min-width: 600px) {
+    .about{
+        padding: 25px 30px;
+    }
+    .homework{
+        padding: 25px 50px;
+        grid-template-rows: 60px 75px 140px;
+    }
+    .hw-btn {
+        margin: 10px 30px;
+    }
+    .card.A{
+        height: 160px;
+        width: 140px;
+    }
+    .final-projects{
+        padding: 25px 130px;
+    }
+}
+@media (min-width: 705px) {
+    .about{
+        padding: 25px 30px;
+        grid-template-rows: auto auto auto auto;
+    }
+    .about .img-container{
+        grid-area: 2 / 2 / 2 / 3;
+    }
+    .my-photo{
+        content: url(/public/images/About/mini-Yo.jpg);
+    }
+    .about h2{
+        grid-area: 3 / 1 / 4 / 3;
+    }
+    .carrusel{
+        grid-area: 4 / 1 / 4 / 3;
+    }
+    .about p{
+        grid-area: 2 / 1 / 2 / 2;
+    }
+    .homework{
+        padding: 25px 80px;
+    }
+    .hw-btn {
+        margin: 10px 40px;
+    }
+    .final-projects{
+        padding: 25px 210px;
+    }
+}
+@media (min-width: 1040px) {
+    .about{
+        padding: 25px 100px;
+    }
+    .about .img-container{
+        display: block;
+        grid-area: 2 / 2 / 5 / 2;
+        padding: 30px 30px;
+    }
+    .carrusel{
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    .homework{
+        padding: 25px 260px;
+    }
+    .final-projects{
+        padding: 25px 350px;
+    }
+}
+@media (min-width: 1360px) {
+    .about .img-container{
+        display: block;
+        grid-area: 2 / 2 / 5 / 2;
+        padding: 30px 30px;
+    }
+    .my-photo{
+        content: url(/public/images/About/Yo.jpg);
+    }
+    .carrusel{
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    .homework{
+        padding: 25px 400px;
+    }
+    .final-projects{
+        padding: 25px 600px;
+    }
+}
