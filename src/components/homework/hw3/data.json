@@ -1,0 +1,87 @@
+[
+    {
+        "text": [
+            "color : #8ef5a7;",
+            "font-size : 20px;",
+            "font-family : Arial;",
+            "font-weight : 900;",
+            "letter-spacing : 5px;",
+            "text-decoration : overline;"
+        ]
+    },
+    {
+        "text": [
+            "color : #3d0237;",
+            "font-size : 15px;",
+            "font-family : Helvetica;",
+            "font-weight : bold;",
+            "letter-spacing : 2px;",
+            "text-decoration : underline;"
+        ]
+    },
+
+    {
+        "text": [
+            "color : #32bf30;",
+            "font-size : 18px;",
+            "font-family: Courier;",
+            "font-weight: lighter;",
+            "letter-spacing : 10px;"
+        ]
+    },
+    {
+        "text": ["color : #2324a4;", "font-size : 24px;", "font-weight : bold;", "letter-spacing : 3px;"]
+    }, {
+        "text": ["color : #87d2af;", "font-size : 16px;", "font-family: Courier;", "font-weight : bold;", "letter-spacing : 5px;" ]
+    }, {
+        "text": ["color : #e999c2;", "font-size : 12px;", "font-weight : bold;", "letter-spacing : 7px;"]
+    }, {
+        "text": ["color : #1d79df;", "font-size : 26px;", "font-weight : bold;", "letter-spacing : 9px;"]
+    }, {
+        "text": ["color : #4d8a92;", "font-size : 30px;", "font-weight : bolder;"]
+    }, {
+        "text": ["color : #95a5cf;", "font-size : 18px;", "font-weight : lighter;", "letter-spacing : 5px;"]
+    }, {
+        "text": ["color : #ca91b2;", "font-size : 21px;", "font-weight : lighter;", "letter-spacing : 2px;"]
+    }, {
+        "text": ["color : #ee1aeb;", "font-size : 10px;", "font-weight : normal;", "letter-spacing : 8px;"]
+    }, {
+        "text": ["color : #5ab406;", "font-size : 32px;", "font-weight : 900;", "letter-spacing : 9px;"]
+    }, {
+        "text": ["color : #0aeb92;", "font-size : 14px;", "font-weight : bold;", "letter-spacing : 5px;"]
+    }, {
+        "text": ["color : #63ca5b;", "font-size : 17px;", "font-family: Arial;", "font-weight : normal;", "letter-spacing : 5px;"]
+    }, {
+        "text": ["color : #f86a50;", "font-size : 22px;", "font-weight : bold;", "letter-spacing : 3px;"]
+    }, {
+        "text": ["color : #591629;", "font-size : 50px;", "font-family: 'Franklin Gothic Medium';", "font-weight : bold;", "letter-spacing : 6px;"]
+    }, {
+        "text": ["color : #3f4d86;", "font-size : 44px;", "font-weight : bold;"]
+    }, {
+        "text": ["color : #e5b5a3;", "font-size : 40px;", "font-weight : bold;", "letter-spacing : 2px;"]
+    }, {
+        "text": ["color : #a2ac86;", "font-size : 36px;", "font-weight : normal;", "letter-spacing : 7px;"]
+    }, {
+        "text": ["color : #1f22cf;", "font-size : 8px;", "font-weight : 900;", "letter-spacing : 5px;"]
+    }, {
+        "text": ["color : #691e17;", "font-size : 12px;", "font-family: Arial;", "font-weight : bold;", "letter-spacing : 1px;"]
+    }, {
+        "text": ["color : #3f9793;", "font-size : 18px;", "font-weight : bold;", "letter-spacing : 5px;"]
+    }, {
+        "text": ["color : #7c0410;", "font-size : 24px;", "font-weight : normal;"]
+    }, {
+        "text": ["color : #4642cd;", "font-size : 28px;", "font-weight : lighter;", "letter-spacing : 2px;"]
+    }, {
+        "text": ["color : #ac275d;", "font-size : 55px;", "font-weight : bold;", "letter-spacing : 2px;"]
+    }, {
+        "text": ["color : #65987b;", "font-size : 70px;", "font-weight : lighter;", "letter-spacing : 3px;"]
+    }, {
+        "text": ["color : #c2f74c;", "font-size : 48px;", "font-weight : 800;", "letter-spacing : 4px;"]
+    }, {
+        "text": ["color : #370270;", "font-size : 55px;", "font-weight : normal;"]
+    }, {
+        "text": ["color : #6d4649;", "font-size : 60px;", "font-weight : bolder;", "letter-spacing : 5px;"]
+    }, {
+        "text": ["color : #53d8f5;", "font-size : 70px;", "font-weight : bold;", "letter-spacing : 2px;"]
+    }
+]

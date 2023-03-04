@@ -1,0 +1,186 @@
+.style-1 {
+    color : #8ef5a7;
+    font-size : 20px;
+    font-family : Arial;
+    font-weight : 900;
+    letter-spacing : 5px;
+    text-decoration : overline;
+}
+.style-2 {
+    color : #3d0237;
+    font-size : 15px;
+    font-family : Helvetica;
+    font-weight : bold;
+    letter-spacing : 2px;
+    text-decoration : underline;
+}
+.style-3 {
+    color : #32bf30;
+    font-size : 18px;
+    font-family: Courier;
+    font-weight: lighter;
+    letter-spacing : 10px;
+    text-decoration : line-through;
+}
+.style-4 {
+    color : #2324a4;
+    font-size : 24px;
+    font-weight : bold;
+    letter-spacing : 3px;
+}
+.style-5 {
+    color : #87d2af;
+    font-size : 16px;
+    font-family: Courier;
+    font-weight : bold;
+    letter-spacing : 5px;
+}
+.style-6 {
+    color : #e999c2;
+    font-size : 12px;
+    font-weight : bold;
+    letter-spacing : 7px;
+}
+.style-7 {
+    color : #1d79df;
+    font-size : 26px;
+    font-weight : bold;
+    letter-spacing : 9px;
+}
+.style-8 {
+    color : #4d8a92;
+    font-size : 30px;
+    font-weight : bolder;
+}
+.style-9 {
+    color : #95a5cf;
+    font-size : 18px;
+    font-weight : lighter;
+    letter-spacing : 5px;    
+}
+.style-10 {
+    color : #ca91b2;
+    font-size : 21px;
+    font-weight : lighter;
+    letter-spacing : 2px;
+}
+.style-11 {
+    color : #ee1aeb;
+    font-size : 10px;
+    font-weight : normal;
+    letter-spacing : 8px;
+}
+.style-12 {
+    color : #5ab406;
+    font-size : 32px;
+    font-weight : 900;
+    letter-spacing : 9px;
+}
+.style-13 {
+    color : #0aeb92;
+    font-size : 14px;
+    font-weight : bold;
+    letter-spacing : 5px;
+}
+.style-14 {
+    color : #63ca5b;
+    font-size : 17px;
+    font-family: Arial;
+    font-weight : normal;
+    letter-spacing : 5px;   
+}
+.style-15 {
+    color : #f86a50;
+    font-size : 22px;
+    font-weight : bold;
+    letter-spacing : 3px;
+}
+.style-16 {
+    color : #591629;
+    font-size : 50px;
+    font-family: 'Franklin Gothic Medium';
+    font-weight : bold;
+    letter-spacing : 6px;
+}
+.style-17 {
+    color : #3f4d86;
+    font-size : 44px;
+    font-weight : bold;
+}
+.style-18 {
+    color : #e5b5a3;
+    font-size : 40px;
+    font-weight : bold;
+    letter-spacing : 2px;
+}
+.style-19 {
+    color : #a2ac86;
+    font-size : 36px;
+    font-weight : normal;
+    letter-spacing : 7px;
+}
+.style-20 {
+    color : #1f22cf;
+    font-size : 8px;
+    font-weight : 900;
+    letter-spacing : 5px;
+}
+.style-21 {
+    color : #691e17;
+    font-size : 12px;
+    font-family: Arial;
+    font-weight : bold;
+    letter-spacing : 1px;
+}
+.style-22 {
+    color : #3f9793;
+    font-size : 18px;
+    font-weight : bold;
+    letter-spacing : 5px;
+}
+.style-23 {
+    color : #7c0410;
+    font-size : 24px;
+    font-weight : normal;
+}
+.style-24 {
+    color : #4642cd;
+    font-size : 28px;
+    font-weight : lighter;
+    letter-spacing : 2px;
+}
+.style-25 {
+    color : #ac275d;
+    font-size : 55px;
+    font-weight : bold;
+    letter-spacing : 2px;
+}
+.style-26 {
+    color : #65987b;
+    font-size : 70px;
+    font-weight : lighter;
+    letter-spacing : 3px;
+}
+.style-27 {
+    color : #c2f74c;
+    font-size : 48px;
+    font-weight : 800;
+    letter-spacing : 4px;
+}
+.style-28 {
+    color : #370270;
+    font-size : 55px;
+    font-weight : normal;
+}
+.style-29 {
+    color : #6d4649;
+    font-size : 60px;
+    font-weight : bolder;
+    letter-spacing : 5px;
+}
+.style-30 {
+    color : #53d8f5;
+    font-size : 70px;
+    font-weight : bold;
+    letter-spacing : 2px;
+}

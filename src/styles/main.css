@@ -1,3 +1,6 @@
+/*-------------------------
+-----------General---------
+-------------------------*/
 :root{
     --primary: #53ac59;
     --secondary:#03484c;
@@ -6,7 +9,15 @@
     --light: #eeeeee;
     --dark: #1c232e;
 }
-*::selection{
+div{
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+.main p, .main h1, .main h2, .main h3, .main li{
+    color: var(--light);
+}
+.main *::selection{
     color: var(--primary);
     background-color: var(--dark);
 }
@@ -88,17 +99,6 @@ nav .btn.is-active:hover span{
 } 
 .a.is-active, .a:hover{
     background-color: var(--primary);
-}
-/*-------------------------
------------General---------
--------------------------*/
-div{
-    max-width: 100%;
-    height: auto;
-    text-align: center;
-}
-p, h1, h2, h3, p, li{
-    color: var(--light);
 }
 /*-------------------------
 ----------Welcome----------
@@ -228,7 +228,6 @@ p, h1, h2, h3, p, li{
 .card-img{
     display: none;
     grid-area: 3 / 1 / 5 / 3;
-    /* border: 1px solid wheat; */
     width: auto;
     height: 100px;
     padding: 10px 25px;
@@ -259,13 +258,9 @@ p, h1, h2, h3, p, li{
 }
 .hw-btn {
     margin: 10px;
-    /* border: 2px solid var(--dark); */
     border-radius: 15px;
 }
-.hw-btn a{
-    text-decoration: none;
-}
-.hw-btn.HW{
+.hw-btn.HomeW{
     grid-area: 3 / 2 / 4 / 3;
 }
 .hw-btn.Lab{

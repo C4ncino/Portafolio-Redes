@@ -1,16 +1,13 @@
 import React  from 'react';
-import Nabvar from './Navbar';
 import CardLenguage from './CardLenguage';
 import '../../styles/main.css';
 
-const Home = () => {
+const Home = ({setPage}) => {
     const lenguages = ['C', 'C++', 'Java', 'Python', 'MySQL', 'React', 'HTML', 'CSS', 'JavaScript'];
     const dir = 'images/About/Logos/';
 
     return (
         <>
-           <Nabvar page = 'home'/>
-
             <div className='welcome'>
                 <h1> Bienvenido a Mi Página Web </h1>
                 <p>
@@ -35,21 +32,17 @@ const Home = () => {
             <div className='homework'>
                 <h1>Tareas</h1>
                 <p>En esta sección se encuentran los enlaces que te llevará a la página dedicada a mis tareas de la materia teórica y las prácticas del laboratorio.</p>
-                <div className='hw-btn HW'>
-                    <a href='homework.html'>
-                        <button className='btnH A'>
-                            <h2>Tareas</h2>
-                            <img alt='Homework' src='images/HW/HW-A.png' />
-                        </button>
-                    </a>
+                <div className='hw-btn HomeW'>
+                    <button className='btnH A' onClick={()=>{setPage('homework')}}>
+                        <h2>Tareas</h2>
+                        <img alt='Homework' src='images/HW/HW-A.png' />
+                    </button>
                 </div>
                 <div className='hw-btn Lab'>
-                    <a href='lab.html'>
-                        <button className='btnH B'>
-                            <h2>Reportes</h2>
-                            <img alt='Lab' src='images/HW/Lab-A.png' />
-                        </button>
-                    </a>
+                    <button className='btnH B' onClick={()=>{setPage('lab')}}>
+                        <h2>Reportes</h2>
+                        <img alt='Lab' src='images/HW/Lab-A.png' />
+                    </button>
                 </div>
             </div>
 
@@ -58,10 +51,6 @@ const Home = () => {
                 <p>Mediante este enlace te redirigiras a la página de mis proyectos finales.</p>
                 <a href='proyects.html'> <button> Proyectos </button> </a>
             </div>
-
-            <footer>
-                <p> &copy; 2023 Diseñado por Carlos Cancino </p>
-            </footer>
         </>
     );
 }

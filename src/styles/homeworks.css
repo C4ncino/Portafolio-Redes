@@ -1,0 +1,552 @@
+.welcome h1{
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+/*-------------------------
+-------------HW------------
+-------------------------*/
+.HW{
+    padding: 30px;
+}
+.HW button{
+    background-color: var(--dark);
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 120px;
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: 700;
+}
+.HW button:hover{
+    color: var(--dark);
+    background-color: var(--primary);
+}
+/*-------------------------
+-----------HW 1-2----------
+-------------------------*/
+.HW.A{
+    background-color: var(--mid);
+
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.HW.A h1{
+    padding: 25px 60px 0 60px;
+    margin: 0;
+}
+.HW.A p{
+    padding: 25px 60px 0 60px;
+}
+/*-------------------------
+------------HW 3-----------
+-------------------------*/
+.HW.B{
+    background-color: var(--dark);
+}
+.HW.B p{
+    padding: 25px 60px;
+}
+.HW.B .container{
+    padding: 30px 0;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    
+    justify-content: center;
+}
+.cart {
+    width: 170px;
+    height: 150px;
+}
+.content {
+    width: 100%;
+    height: 100%;
+  
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.cart:hover .content {
+    transform: rotateY( 180deg ) ;
+    transition: transform 0.5s;
+}
+.front, .back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--secondary);
+    box-shadow: -4px 4px 8px var(--mid);
+    
+    border-radius: 10px;
+    backface-visibility: hidden;
+    
+    text-align: center;
+}
+.front{
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+.back {
+    background-color: var(--mid);
+    box-shadow: -4px 4px 8px var(--dark);
+    transform: rotateY( 180deg ); 
+    padding: 10px;
+    text-align: left;
+}
+.back b{
+    font-size: 15px;
+    font-weight: 100;
+    color: var(--light);
+    height: 100%;
+    width: 100%;
+}
+/*-------------------------
+------------HW 4-----------
+-------------------------*/
+.HW.C{
+    background-color: var(--secondary);
+    display: block;
+    justify-content: center;
+}
+.HW.C h2{
+    color: var(--primary);
+}
+.layers{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+}
+.OSI{
+    padding: 20px 0;
+    text-align: start;
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-rows: auto auto auto auto auto;
+}
+.OSI p{
+    grid-area: 2 / 1 / 3 / 4 ;
+    text-align: justify;
+    padding: 8px;
+}
+.especifications{
+    grid-area: 3 / 1 / 4 / 4 ;
+    padding: 10px;
+}
+.especifications li{
+    padding: 2px;
+}
+.OSI h3{
+    grid-area: 4 / 1 / 5 / 3 ;
+    padding-top: 15px;
+}
+.layers.O{
+    grid-area: 5 / 1 / 6 / 4 ;
+}
+.card.H{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+
+    height: 170px;
+    width: 250px;
+    background-color: var(--mid);
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 0rem 0 1rem var(--dark);
+
+    transition: 0.4s ease-out;
+}
+.card.H:not(:first-child) {
+    margin-left: -50px;
+}
+.card.H:hover {
+    position: relative;
+    z-index: 99;
+    transform: translateY(-10px);
+    transition: 0.2s ease-out;
+    align-items: center;
+    width: auto;
+}
+.card.H h4{
+    grid-area: 1 / 1 / 3 / 3;
+    font-weight: 400;
+    font-size: 22px;
+    padding: 8px;
+    color: var(--light);
+}
+.card.H:hover h4{
+    padding-top: 0;
+    grid-area: 1 / 1 / 2 / 3;
+}
+.card.H p{
+    display: none;
+    grid-area: 2 / 1 / 3 / 3;
+    padding: 0px 10px;
+    text-align: center;
+}
+.card.H:hover p{
+    display: block;
+}
+
+.TCP{
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-rows: auto auto auto auto;
+    text-align: start;
+}
+.TCP h2{
+    grid-area: 1 / 1 / 2 / 3 ;
+}
+.TCP p{
+    grid-area: 2 / 1 / 3 / 4 ;
+    text-align: justify;
+    padding: 8px;
+}
+.TCP h3{
+    grid-area: 3 / 1 / 4 / 2 ;
+    padding-top: 15px;
+}
+.layers.T{
+    grid-area: 4 / 1 / 5 / 4 ;
+}
+.card.H2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+
+    height: 170px;
+    width: auto;
+    max-width: 200px;
+}
+.card.H2 p{
+    display: none;
+    grid-area: 2 / 1 / 3 / 3;
+    text-align: center;
+}
+
+.comparison{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(9, auto);
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0rem 0 1rem var(--dark);
+}
+.Title{
+    border-right: 1px solid white;
+    grid-row: 1 / 2;
+    margin: 0;
+    padding: 10px;
+}
+.Title.O{
+    grid-column: 2 / 3;
+}
+.Title.T{
+    border: none;
+    grid-column: 3  / 4;
+}
+.concept, .osiT, .tcp{
+    padding: 10px;
+}
+.concept{
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+    grid-column: 1 / 2;
+    
+}
+.osiT{
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+    grid-column: 2 / 3;
+    
+}
+.tcp{
+    border-top: 1px solid white;
+    grid-column: 3 / 4;
+}
+
+.examples{
+    padding: 20px 0;  
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+.examples h2{
+    padding: 5px 0;
+    color: var(--primary);
+}
+.examples ul{
+    padding: 5px 30px;
+}
+.examples li{
+    padding: 5px 0;
+}
+
+/*-------------------------
+------------HW 5-----------
+-------------------------*/
+.HW.D{
+    background-color: var(--mid);
+}
+.elements{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 20px 0;
+    justify-content: center;
+}
+.cardT{
+    width: 250px;
+    min-height: 300px;
+    /* background-color: var(--tertiary); */
+    box-shadow: 0.5em 0.5em 1em var(--secondary);
+    padding: 10px 20px;
+    border-radius: 15px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, auto);
+}
+.cardT p{
+    font-size: 14px;
+    margin: 6px 0;
+}
+.titleC{
+    color: var(--primary);
+    text-shadow: 1px 4px 0.2em var(--secondary);
+    grid-area: 1 / 1 / 2 / 3;
+}
+.def{
+    grid-area: 2 / 1 / 3 / 3;
+}
+.IP{
+    text-shadow: 2px 0 0.3em var(--dark);
+    margin: 5px;
+    font-weight: 700;
+    grid-area: 3 / 1 / 4 / 3;
+}
+.exampleT{
+    color: var(--secondary);
+    text-shadow: 2px 0 0.4em var(--mid);
+    text-align: start;
+    grid-area: 4 / 1 / 5 / 2;
+}
+.example{
+    text-align: left;
+    grid-area: 5 / 1 / 6 / 3;
+}
+.img-contain{
+    grid-area: 6 / 1 / 7 / 3;
+    height: fit-content;
+    margin: 0 30%;
+    align-self: center;
+    justify-self: center;
+}
+.text-b{
+    display: block;
+    text-shadow: 3px 0 0.3em var(--dark);
+    border: 3px solid var(--mid);
+    box-shadow: 0 0 0.25em var(--secondary);
+    border-radius: 8px;
+    padding: 5px;
+}
+.c-img{
+    display: none;
+    height: 130px;
+    width: auto;
+    padding: 10px 15px;
+}
+.img-contain:hover{
+    margin: 0;
+}
+.img-contain:hover .text-b{
+    display: none;
+}
+.img-contain:hover .c-img{
+    display: block;
+}
+.HW.D h2{
+    padding: 20px 0 10px 0;
+}
+.matrix{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0rem 0 1rem var(--dark);
+}
+.matrix h3{
+    writing-mode:vertical-lr;
+    text-orientation: upright;
+    padding: 0 10px;
+}
+.matrix .title{
+    color: var(--dark);
+    font-weight: 800;
+    border-right: 1px solid white;
+    grid-row: 1 / 2;
+}
+.element, .compu, .repeat, .hub, .switch, .router, .bridge{
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+}
+.element{
+    color: var(--dark);
+    font-weight: 800;
+    grid-column: 1 / 2;
+}
+.compu{ 
+    grid-column: 2 / 3;
+}
+.repeat{
+    grid-column: 3 / 4;
+}
+.hub{
+    grid-column: 4 / 5;
+}
+.switch{
+    grid-column: 5 / 6;
+}
+.router{
+    grid-column: 6 / 7;
+}
+.bridge{
+    border-right: 0;
+    grid-column: 7 / 8;
+}
+.conclusion{
+    padding: 15px;
+    text-align: justify;
+}
+.HW.E{
+    width: 100%;
+    background-color: var(--dark);
+}
+.HW.E h2{
+    text-align: start;
+    align-self: flex-start;
+}
+.part{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.part table, tr, td{
+    border: 4px solid var(--light);
+    border-collapse: collapse;
+}
+.part table h3{
+    padding: 15px;
+}
+
+
+/*-------------------------
+---------Responsive--------
+-------------------------*/
+
+@media (min-width: 610px) {
+    .matrix h3{
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        padding: 5px 25px;
+    }
+}
+
+@media (min-width: 770px) {
+    .matrix{
+        grid-template-columns: repeat(7, auto);
+        grid-template-rows: repeat(7, auto);
+    }
+    .matrix h3{
+        writing-mode: horizontal-tb;
+        text-orientation: sideways;
+        padding: 5px;
+    }
+    .matrix .title{
+        padding: 10px;
+    }
+}
+@media (min-width: 900px) {
+    .OSI{
+        grid-template-rows: auto auto auto auto;
+    }
+    .OSI p{
+        grid-area: 2 / 1 / 3 / 3 ;
+    }
+    .especifications{
+        grid-area: 3 / 1 / 4 / 3 ;
+        padding: 10px 100px 10px 50px;
+    }
+    .OSI h3{
+        grid-area: 1 / 3 / 2 / 4 ;
+        justify-self: center;
+    }
+    .layers{
+        flex-direction: column;
+    }
+    .layers.O{
+        grid-area: 2 / 3 / 5 / 4 ;
+    }
+    .layers.T{
+        grid-area: 2 / 1 / 5 / 2 ;
+    }
+    .TCP{
+        grid-template-rows: auto auto auto;
+    }
+    .TCP h2{
+        grid-area: 1 / 2 / 2 / 3 ;
+    }
+    .TCP p{
+        grid-area: 2 / 2 / 3 / 4 ;
+        text-align: justify;
+        padding: 8px;
+    }
+    .TCP h3{
+        grid-area: 1 / 1 / 2 / 2 ;
+        justify-self: center;
+    }
+    .layers.T{
+        grid-area: 2 / 1 / 5 / 2 ;
+    }
+    .card.H{
+        height: auto;
+    }
+    .card.H:not(:first-child) {
+        margin-top: -20px;
+        margin-left: 0px;
+    }
+    .card.H{
+        width: 250px;
+        max-width: 250px;
+    }
+}
+@media (min-width: 1185px) {
+    .HW{
+        padding: 40px 100px;
+    }
+    .HW.C{
+        padding: 40px 150px;
+    }
+    .HW.D{
+        padding: 40px 100px;
+    }
+}
