@@ -1,0 +1,38 @@
+{
+    "elements" : [
+        {
+            "title" : "Repetidor",
+            "definition" : "Amplifica y retransmite la misma señal que le llega",
+            "IP" : "Sin IP Propia",
+            "example" : "Un repetidor en una casa para amplificar señales Wifi y abarcar mayor área",
+            "image_src" : "images/T5/repiter.png"
+        },{
+            "title" : "Hub",
+            "definition" : "Permite conectar dispositivos locales para darles la misma info",
+            "IP" : "Sin IP Propia",
+            "example" : "Un hub para conectar múltiples dispositivos mediante un solo puerto USB",
+            "image_src" : "images/T5/hub.png"
+        },{
+            "title" : "Router",
+            "definition" : "Permite conectar diferentes redes y dirigir el tráfico entre ellas",
+            "IP" : "Con IP Propia",
+            "example" : "Sirve para conectar una red local (oficina) con otra red (internet)",
+            "image_src" : "images/T5/router.png"
+        },{
+            "title" : "Bridge",
+            "definition" : "Ayuda a cominicar dos protocolos diferentes teaduciendo los datos",
+            "IP" : "Sin IP Propia",
+            "example" : "Conexión de dos departamentos dentro de una empresa",
+            "image_src" : "images/T5/bridge.png"
+        },{
+            "title" : "Repetidor",
+            "definition" : "Conecta dispositivos en una red local y dirigir el tráfico entre ellos",
+            "IP" : "Con IP Propia",
+            "example" : "Conectar varios ordenadores dentro de una red de oficinas",
+            "image_src" : "images/T5/switch.png"
+        }
+    ],
+    "matrix" : {
+
+    }
+}

@@ -1,23 +1,23 @@
 import React from 'react';
 
 const FlippingCard = ({title, i, data}) => {
-    const style = "style-" + i;
+    const style = 'style-' + i;
 
     return (  
         <>
-            <div className="cart">
-                <div className="content">
-                    <div className="front">
+            <div className='cart'>
+                <div className='content'>
+                    <div className='front'>
                         <b className={style}> {title} </b>
                     </div>
-                    <div className="back">
-                        <b>
-                            {data.map( (text)=>
+                    <div className='back'>
+                            {data.map( (text, i)=>
                                 <>
-                                    {text} <br/>
+                                    <b key={i}>
+                                        {text} <br/>
+                                    </b>
                                 </>
                             )}
-                        </b>
                     </div>
                 </div>
             </div>

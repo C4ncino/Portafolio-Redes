@@ -8,10 +8,10 @@ const HW3 = () => {
 
     return (  
         <>
-            <div className="HW B">
+            <div className='HW B'>
             <h1>Tarea 3</h1>
             <p>La tercer Tarea consistió en la creación de 30 estilos de texto diferentes para familiarizarse con CSS.</p>
-            <div className="container">
+            <div className='container'>
                 {data.map( (d, i) => 
                     <FlippingCard key={i} title={name + (i + 1)} i={i + 1} data={d['text']} />
                 )}

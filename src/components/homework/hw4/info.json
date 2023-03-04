@@ -1,0 +1,143 @@
+{
+    "layers" : {
+        "OSI" :[
+            {
+                "title" : "7. Aplicación",
+                "description" : "Almacena los protocolos de comunicación utilizados con mayor frecuencia por los usuarios."
+            },{
+                "title" : "6. Presentación",
+                "description" : "Se centra en la sintaxis y semántica de la información transmitida para su manejo e intercambio."
+            },{
+                "title" : "5. Sesión",
+                "description" : "Establece conexión entre diferentes máquinas, permite la transmisión de datos integra y controla las operaciones."
+            },{
+                "title" : "4. Transporte",
+                "description" : "Fragmenta paquetes y decide el tipo de servicio de la capa de sesión y determina los usuarios de la red."
+            },{
+                "title" : "3. Capa de red",
+                "description" : "Maneja la transferencia entre los dos dispositivos de diferentes redes."
+            },{
+                "title" : "2. Enlace de datos",
+                "description" : "Controla el flujo y maneja los errores para evitar el envío o recepción de información errónea."
+            },{
+                "title" : "1. Física",
+                "description" : "Transmite los datos bit por bit mediante medios físicos como cables o comunicación."
+            }
+        ],
+        "TCP" : [
+            {
+                "title" : "4. Aplicación",
+                "description" : "Responsable de la comunicación entre aplicaciones."
+            },{
+                "title" : "3. Transporte",
+                "description" : "Transmite datos entre dispositivos y asegura que los datos lleguen correctamente."
+            },{
+                "title" : "2. Interred",
+                "description" : "Enruta los datos a través de la red hacia su destino."
+            },{
+                "title" : "1. Enlace",
+                "description" : "Transmite de datos a través de medios físicos como cables o inalámbricos."
+            }
+        ]
+    },
+    "comparison" : {
+        "titles" : [
+            {
+                "title" : "Nombre Completo",
+                "row" : {"gridRow" : "2 / 3"}
+            },{
+                "title" : "Dessarrollador",
+                "row" : {"gridRow" : "3 / 4"}
+            },{
+                "title" : "Alcance",
+                "row" : {"gridRow" : "4 / 5"}
+            },{
+                "title" : "No. de Capas",
+                "row" : {"gridRow" : "5 / 6"}
+            },{
+                "title" : "Tangible",
+                "row" : {"gridRow" : "6 / 7"}
+            },{
+                "title" : "Tipo de Modelo",
+                "row" : {"gridRow" : "7 / 8"}
+            },{
+                "title" : "Protocolo",
+                "row" : {"gridRow" : "8 / 9"}
+            },{
+                "title" : "Enfoque",
+                "row" : {"gridRow" : "9 / 10"}
+            }
+        ],
+        "OSI" : [
+            {
+                "info" : "Interconexión de Sistema Abierto",
+                "row" : {"gridRow" : "2 / 3"}
+            },{
+                "info" : "Organización de normas internacionales (ISO)",
+                "row" : {"gridRow" : "3 / 4"}
+            },{
+                "info" : "Es un modelo teórico que se utiliza para el sistema informático",
+                "row" : {"gridRow" : "4 / 5"}
+            },{
+                "info" : "7",
+                "row" : {"gridRow" : "5 / 6"}
+            },{
+                "info" : "No",
+                "row" : {"gridRow" : "6 / 7"}
+            },{
+                "info" : "Conceptual",
+                "row" : {"gridRow" : "7 / 8"}
+            },{
+                "info" : "No es un protocolo, sino un modelo de referencia utilizado para comprender y diseñar la arquitectura del sistema",
+                "row" : {"gridRow" : "8 / 9"}
+            },{
+                "info" : "Horizontal",
+                "row" : {"gridRow" : "9 / 10"}
+            }
+        ],
+        "TCP" : [
+            {
+                "info" : "Protocolo de control de transmisión / Protocolo de Internet",
+                "row" : {"gridRow" : "2 / 3"}
+            },{
+                "info" : "Departamento de Defensa (DoD)",
+                "row" : {"gridRow" : "3 / 4"}
+            },{
+                "info" : "Es un modelo de servidor de cliente utilizado para la transmisión de datos a través de internet",
+                "row" : {"gridRow" : "4 / 5"}
+            },{
+                "info" : "4",
+                "row" : {"gridRow" : "5 / 6"}
+            },{
+                "info" : "Si",
+                "row" : {"gridRow" : "6 / 7"}
+            },{
+                "info" : "Cliente-Servidor",
+                "row" : {"gridRow" : "7 / 8"}
+            },{
+                "info" : "Protocolo estándar utilizado para todas las redes, incluida internet",
+                "row" : {"gridRow" : "8 / 9"}
+            },{
+                "info" : "Vertical",
+                "row" : {"gridRow" : "9 / 10"}
+            }
+        ]
+    },
+    "examples" : {
+        "OSI" : [
+            "Capa de presentación: Se encarga de dar un formato que ambas computadoras entiendan a toda la información del correo, como el asunto, el cuerpo y los archivos adjuntos.",
+            "Capa de aplicación: Se encarga de otorgar la parte donde el usuario puede escribir y enviar el correo, cuando esto último pasa el cliente de correo electrónico se comunica con el servidor de correo electrónico saliente.",
+            "Capa de sesión: Establece una sesión entre la computadora del usuario y el servidor de correo electrónico saliente para coordinar la transferencia del correo electrónico.",
+            "Capa de transporte: Divide los datos en segmentos y se agrega encabezados que indican la fuente y el destino de los datos. Luego, se transmiten a través de la red utilizando el protocolo de transporte.",
+            "Capa de red: Convierte los segmentios en paquetes y se agrega encabezados que incluyen las direcciones IP de origen y destino.",
+            "Capa de enlace de datos: Convierte los paquetes en tramas y se agrega encabezados que indican la dirección MAC de la computadora de origen y el dispositivo de red de destino. Las tramas se transmiten a través de la red utilizando protocolos como Ethernet.",
+            "Capa física: Traduce la información en señales eléctricas, ópticas o de radiofrecuencia y se transmite a través del medio físico de la red, como cables de cobre, fibra óptica o aire (en caso de redes inalámbricas)."
+        ],
+        "TCP" : [
+            "Capa de aplicación: Se encarga de otorgar la parte donde el usuario puede escribir y enviar el correo, cuando esto último pasa el cliente de correo electrónico se comunica con el servidor de correo electrónico saliente.",
+            "Capa de transporte: Divide los datos en segmentos y se agrega encabezados que indican la fuente y el destino de los datos. Luego, se transmiten a través de la red utilizando el protocolo de transporte, como TCP.",
+            "Capa de Internet: Convierte los segmentos en paquetes y se agrega encabezados que incluyen las direcciones IP de origen y destino. Los paquetes se enrutan a través de la red utilizando el protocolo IP.",
+            "Capa de enlace de datos: Convierte los paquetes en tramas y se agrega encabezados que indican la dirección MAC de la computadora de origen y el dispositivo de red de destino. Las tramas se transmiten a través de la red utilizando protocolos como Ethernet."
+        ]
+    }
+}
