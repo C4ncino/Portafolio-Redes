@@ -32,7 +32,97 @@
             "image_src" : "images/T5/switch.png"
         }
     ],
-    "matrix" : {
-
-    }
+    "matrix" : [
+        {
+            "title" : "Elemento",
+            "style" : "element",
+            "data" : [
+                {
+                    "row" : {"gridRow" : "2 / 3"},
+                    "info" : "Compu"
+                },{
+                    "row" : {"gridRow" : "3 / 4"},
+                    "info" : "Repeater"
+                },{
+                    "row" : {"gridRow" : "4 / 5"},
+                    "info" : "Hub"
+                },{
+                    "row" : {"gridRow" : "5 / 6"},
+                    "info" : "Switch"
+                },{
+                    "row" : {"gridRow" : "6 / 7"},
+                    "info" : "Router"
+                },{
+                    "row" : {"gridRow" : "7 / 8"},
+                    "info" : "Bridge"
+                }
+            ]
+        },{
+            "title" : "Compu",
+            "style" : "compu",
+            "rows" : [ 
+                {"gridRow" : "2 / 3", "color" : "var(--dark)"},
+                {"gridRow" : "3 / 4"},
+                {"gridRow" : "4 / 5"},
+                {"gridRow" : "5 / 6"},
+                {"gridRow" : "6 / 7"},
+                {"gridRow" : "7 / 8"}
+            ]
+        },{
+            "title" : "Repeater",
+            "style" : "repeat",
+            "rows" : [ 
+                {"gridRow" : "2 / 3"},
+                {"gridRow" : "3 / 4", "color" : "var(--dark)"},
+                {"gridRow" : "4 / 5"},
+                {"gridRow" : "5 / 6"},
+                {"gridRow" : "6 / 7"},
+                {"gridRow" : "7 / 8"}
+            ]
+        },{
+            "title" : "Hub",
+            "style" : "hub",
+            "rows" : [ 
+                {"gridRow" : "2 / 3"},
+                {"gridRow" : "3 / 4"},
+                {"gridRow" : "4 / 5", "color" : "var(--dark)"},
+                {"gridRow" : "5 / 6"},
+                {"gridRow" : "6 / 7"},
+                {"gridRow" : "7 / 8"}
+            ]
+        },{
+            "title" : "Switch",
+            "style" : "switch",
+            "rows" : [ 
+                {"gridRow" : "2 / 3"},
+                {"gridRow" : "3 / 4"},
+                {"gridRow" : "4 / 5"},
+                {"gridRow" : "5 / 6", "color" : "var(--dark)"},
+                {"gridRow" : "6 / 7"},
+                {"gridRow" : "7 / 8"}
+            ]
+        },{
+            "title" : "Router",
+            "style" : "router",
+            "rows" : [ 
+                {"gridRow" : "2 / 3"},
+                {"gridRow" : "3 / 4"},
+                {"gridRow" : "4 / 5"},
+                {"gridRow" : "5 / 6"},
+                {"gridRow" : "6 / 7", "color" : "var(--dark)"},
+                {"gridRow" : "7 / 8"}
+            ]
+        },{
+            "title" : "Bridge",
+            "style" : "bridge",
+            "rows" : [ 
+                {"gridRow" : "2 / 3"},
+                {"gridRow" : "3 / 4"},
+                {"gridRow" : "4 / 5"},
+                {"gridRow" : "5 / 6"},
+                {"gridRow" : "6 / 7"},
+                {"gridRow" : "7 / 8"}
+            ]
+        }
+    ]
 }
