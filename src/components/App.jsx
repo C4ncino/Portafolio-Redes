@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
-import Home from './home/Home';
 import Nabvar from './Navbar';
-import Footer from './Footer';
-import T1 from './homework/hws1-2/T1';
-import T2 from './homework/hws1-2/T2';
-import '../styles/normalize.css';
+import Home from './home/Home';
 import Homework from './homework/Homework';
+import Footer from './Footer';
+import T1 from './homework/hw1-2/T1';
+import T2 from './homework/hw1-2/T2';
+import '../styles/normalize.css';
 
 const App = () => {
     const [page, setPage] = useState('home');

@@ -19,10 +19,14 @@ const HW5 = () => {
 
             <h2>Matriz de conexiones</h2>
             <div className='matrix'>
-                {matrix.map( (element, i) =>
+                {matrix.map( (element, index) =>
                     <>
-                        <h3 className='title'>{element.title}</h3>
-                        {i === 0 ? (
+                        {index === 6 ? (
+                            <h3 className='title' style={{borderRight: 0}}>{element.title}</h3>
+                        ):(    
+                            <h3 className='title'>{element.title}</h3>
+                        )}
+                        {index === 0 ? (
                             <>
                                 {element.data.map( (pos, i) =>
                                     <h3 key={i} className={element.style} style={pos.row}>{pos.info}</h3>
@@ -31,14 +35,13 @@ const HW5 = () => {
                         ):(
                             <>
                                 {element.rows.map( (pos, i) =>
-                                    <>
-                                        {pos.style === {"gridRow" : "3 / 4"} ? (
-                                            <h3 key={i} className={element.style} style={pos}>Recto</h3>
+                                    <h3 key={i} className={element.style} style={pos}>
+                                        {i === index - 1  ? (
+                                            "Cruzado"
                                         ):(
-                                            
-                                            <h3 key={i} className={element.style} style={pos}>Cruzado</h3>
+                                            "Recto"
                                         )}
-                                    </>
+                                    </h3>
                                 )}
                             </>
                         )}
