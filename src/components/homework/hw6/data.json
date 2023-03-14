@@ -1,0 +1,28 @@
+{
+    "elements" : [
+        {
+            "title" : "PC",
+            "info" : "Es el punto de inicio o final de cualquier red. Se encarga de mandar y recibir paquetes a través de la red.",
+            "img" : "images/A.jpeg"
+        },{
+            "title" : "Repetidor",
+            "info" : "Amplifica la señal que recibe. Manda los paquetes que recibe a través de la red.",
+            "img" : "images/A.jpeg"
+        },{
+            "title" : "Switch",
+            "info" : "Redirige un paquete a través de la red en base a la IP del destinatario. Manda los paquetes enviados a los destinatarios indicados.",
+            "img" : "images/A.jpeg"
+        }
+    ],
+    "evidence" : [
+        {
+            "video" : "_zjhcuSBKB0"
+        },{
+            "video" : "bhfKgj8GK8I"
+        },{
+            "video" : "4gfjM1yV_Ik"
+        },{
+            "video" : "6J8xT2Q39aw"
+        }
+    ]
+}

@@ -459,6 +459,89 @@
     padding: 15px;
 }
 
+/*-------------------------
+------------HW 6-----------
+-------------------------*/
+.HW.E{
+    width: 100%;
+    background-color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.HW.E h2::first-letter{
+    color: var(--primary);
+}
+.HW.E h2{
+    margin-top: 20px;
+    text-align: start;
+    align-self: flex-start;
+}
+.HW.E table{
+    margin-top: 15px;
+    max-width: 800px;
+}
+.HW.E table, tr, td{
+    border: 2px solid var(--light);
+    border-collapse: collapse;
+}
+.HW.E table h3{
+    padding: 15px;
+}
+.HW.E td p{
+    display: flex;
+    justify-content: center;
+    color: var(--light);
+    text-align: start;
+    padding: 15px;
+}
+.parts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px;
+}
+.part{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.content.B{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.part div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-around;
+}
+.com-img{
+    padding: 8px;
+    object-fit: cover;
+    max-height: 150px;
+    border-radius: 20px;    
+}
+.diagram{
+    border-radius: 15px;
+    border: 3px solid var(--primary);
+    height: 200px;
+}
+.diagram.B{
+    height: 180px;
+}
+.video{
+    border-radius: 15px;
+    height: 200px;
+}
 
 /*-------------------------
 ---------Responsive--------
@@ -549,5 +632,8 @@
     }
     .HW.D{
         padding: 40px 100px;
+    }
+    .part{
+        width: 40%;
     }
 }
