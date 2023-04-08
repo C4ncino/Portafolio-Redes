@@ -10,6 +10,9 @@ import '../../styles/homeworks.css'
 const Homework = ({setLocalPage}) => {
     return ( 
         <> 
+            <div class="welcome">
+                <h1> Tareas </h1>
+            </div>
             <HW1and2 setLocalPage={setLocalPage}/>
             <HW3/>
             <HW4/>

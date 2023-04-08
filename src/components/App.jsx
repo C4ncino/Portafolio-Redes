@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Nabvar from './Navbar';
 import Home from './home/Home';
 import Homework from './homework/Homework';
+import Lab from './lab/Lab';
 import Footer from './Footer';
 import T1 from './homework/hw1-2/T1';
 import T2 from './homework/hw1-2/T2';
@@ -20,7 +21,25 @@ const App = () => {
                     {page === 'home'? (
                         <Home setPage={setPage}/>
                     ):(
-                        <Homework setLocalPage={setLocalPage}/>
+                        <>
+                            {page === 'homework'? (
+                                <Homework setLocalPage={setLocalPage}/>
+                            ):(
+                                <>
+                                    {page === 'lab'? (
+                                        <Lab/>
+                                    ):(
+                                        <>
+                                            {page === 'projects'? (
+                                                <></>
+                                            ):(
+                                                <></>
+                                            )}
+                                        </>
+                                    )}
+                                </>
+                            )}
+                        </>
                     )}
 
                     <Footer/>

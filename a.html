@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+      <div class="practice A">
+        <h1 class="title">Practica 1: “Protocolo de Comunicación: Contador de pulsos y contador de tiempo”</h1>
+        <div class="general">
+            <h2>Objetivo General</h2>
+            <h3>Conocer, identificar y comprobar el funcionamiento al desarrollar un protocolo de comunicación, en esta primera parte de un contador de pulsos y un contador de tiempo en un pulso.</h3>
+        </div>
+        <div class="especifics">
+            <h2>Objetivos específicos</h2>
+            <h3>Contador de pulsos</h3>
+            <ul>
+                <li>Utilizando 1 Arduino, diseñar una función que permita enviar un número determinado de pulsos (Variación de 0 a 1) a una frecuencia específica, la función debe tener la siguiente estructura void pulsos(int cantidad, int duración). (Comprobar el correcto funcionamiento utilizando el osciloscopio).</li>
+                <li>Utilizando un segundo Arduino, diseñar una función que permita contar el número de pulsos que ha recibido (Variación de 0 a 1) y mostrarlos en el monitor serial</li>
+                <li>Utilizando ambos arduinos, conectar un pin de los Arduinos para comprobar el funcionamiento del sistema enviando un numero de pulsos específicos a la velocidad de 1 pulso por segundo,10, 100 y 1000 pulsos por segundo.</li>
+            </ul>
+            <h3>Contador de duración de pulsos</h3>
+            <ul>
+                <li>Utilizando 1 Arduino, diseñar una función que permita enviar un pulso con un tiempo en High determinado (Comprobar el correcto funcionamiento utilizando el osciloscopio)</li>
+                <li>Utilizando un segundo Arduino, diseñar una función que permita contar el tiempo de la duración de un pulso que ha recibido del primer Arduino (Variación de 0 a 1) y mostrarlos en el monitor serial.</li>
+            </ul>
+        </div>
+        <h2 class="images-t"> Codes </h2>
+        <div class="images">
+            <img src="/Practicas/P1/code_envio.png">
+            <img src="/Practicas/P1/code_recepcion.png">
+        </div>
+        <h2 class="videos-t"> Evidencias </h2>
+        <div class="videos">            
+            <iframe 
+                src="https://www.youtube.com/embed/Lyt2AeEdSIw?mute=1" 
+                frameborder="0"
+                allowfullscreen
+            ></iframe>
+            <iframe 
+                src="https://www.youtube.com/embed/0Z9hTtTfpII?mute=1" 
+                frameborder="0"
+                allowfullscreen
+            ></iframe>
+        </div>
+    </div>
+    
+    <div class="practice B">
+        <h1 class="title">Practica 2: “Protocolo de Comunicación: Convertidor a binario”</h1>
+        <div class="general">
+            <h2>Objetivo General</h2>
+            <h3>Conocer, identificar y comprobar el funcionamiento al desarrollar un protocolo de comunicación, en esta tercera parte de un convertidor a binario.</h3>
+        </div>
+        <div class="especifics">
+            <h2>Objetivos específicos</h2>
+            <ul>
+                <li>Utilizando 1 Arduino, diseñar un sistema que permita convertir el valor analógico de un potenciómetro en un arreglo de variables que representen el numero en binario de 8 bits, de tal forma que podamos ver cada uno de los valores como salidas digitales en los pines del Arduino.</li>
+                <li>Utilizando un segundo Arduino, diseñar una función que permita convertir el valor en binario obtenido de 8 puertos digitales del Arduino en un valor entero en sistema decimal y mostrarlos en el monitor serial. Utilizar el primer Arduino para generar los valores digitales en binario y el segundo Arduino utilizarlo para decodificarlos y convertirlos en un valor decimal</li>
+            </ul>
+        </div>
+        <h2 class="images-t"> Codes </h2>
+        <div class="images">
+            <img src="/Practicas/P2/code_envio.png">
+            <img src="/Practicas/P2/code_recepcion.png">
+        </div>
+        <h2 class="videos-t"> Evidencias </h2>
+        <div class="videos">
+            <iframe 
+                src="https://www.youtube.com/embed/EqM4LdNnjtI?mute=1" 
+                frameborder="0"
+                allowfullscreen
+            ></iframe>
+         </div>
+    </div>
+
+    <div class="practice C">
+        <h1 class="title">Practica 3: “Protocolo de Comunicación Asíncrono”</h1>
+        <div class="general">
+            <h2>Objetivo General</h2>
+            <h3>Conocer, identificar y comprobar el funcionamiento al desarrollar un protocolo de comunicación asíncrono.</h3>
+        </div>
+        <div class="especifics">
+            <h2>Objetivos específicos</h2>
+            <ul>
+                <li>Utilizando 1 Arduino, diseñar un sistema que permita convertir el valor analógico de un potenciómetro en un arreglo de variables que representen el numero en binario de 8 bits, y los deposite en un arreglo [ ], Finalmente elaborar un código de programación que permita enviar los bits del arreglo en orden y en serie siguiendo las siguientes características:
+                    <br>- Iniciar el envió de los datos siempre con una señal HIGH (En total se enviarán 9 datos, el primer bit en HIGH y posteriormente los 8 bits de información).
+                    <br>- Enviar los datos con una duración del pulso predeterminada, ejemplo 1000 ms
+                    <br>- Enviar siempre la misma cantidad de bits.
+                </li>
+                <li>Utilizando un segundo Arduino, diseñar una función que permita adquirir el valor en bits de la señal de comunicación del Arduino anterior, la procese y la convierte en un dato decimal que finalmente enviara al monitor serial.</li>
+            </ul>
+        </div>
+        <h2 class="images-t"> Codes </h2>
+        <div class="images">
+            <img src="/Practicas/P3/code_envio.png">
+            <img src="/Practicas/P3/code_recepcion.png">
+        </div>
+        <h2 class="videos-t"> Evidencias </h2>
+        <div class="videos">
+            <div class="iframe">
+            </div>
+            <div class="iframe">
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="practice D">
+        <h1 class="title">Practica 4: “Wifi ESP8266 Entradas y Salidas Digitales” </h1>
+        <div class="general">
+            <h2>Objetivo General</h2>
+            <h3>Conocer, identificar y comprobar el funcionamiento de las entradas y salidas digitales en el módulo NodeMCU ESP8266 o ESP32.</h3>
+        </div>
+        <div class="especifics">
+            <h2>Objetivos específicos</h2>
+            <ul>
+                <li> Utilizando la información e instrucciones de la presentación, configurar el IDE de Arduino para poder programar el NodeMCU directamente desde el entorno de Arduino, instalando las herramientas necesarias. </li>
+                <li> Revisar el pinout y los GPIO disponibles para el uso del NodeMCU seleccionado. </li>
+                <li> Desarrollar un programa de encendido de un LED mediante programación. </li>
+                <li> Desarrollar un programa de apagado de un LED mediante programación. </li>
+                <li> Desarrollar un programa de encendido y apagado de un LED mediante retardos. </li>
+                <li> Desarrollar un sistema de encendido y apagado de un LED mediante el uso de botones. </li>
+                <li> Desarrollar un sistema de encendido y apagado de un LED mediante el uso de dos botones y una condicional AND.  </li>
+                <li> Desarrollar un sistema de encendido y apagado de un LED mediante el uso de dos botones y una condicional OR.  </li>
+            </ul>
+        </div>
+        <h2 class="images-t"> Codes </h2>
+        <div class="images">
+            <img src="/Practicas/P4/code_P4.1.png">
+            <img src="/Practicas/P4/code_P4.2.png">
+            <img src="/Practicas/P4/code_P4.3.png">
+            <img src="/Practicas/P4/code_P4.4.png">
+        </div>
+        <h2 class="videos-t"> Evidencias </h2>
+        <div class="evidencias">
+            <div class="images-e">
+                <img src="/Practicas/P4/pinout.png">
+                <img src="/Practicas/P4/esquema.png">
+            </div>
+            <div class="videos">
+                <iframe 
+                    src="https://www.youtube.com/embed/e_npYneRs-Q?mute=1" 
+                    frameborder="0"
+                    allowfullscreen
+                ></iframe>
+                <iframe 
+                    src="https://www.youtube.com/embed/z-8LqghcisM?mute=1" 
+                    frameborder="0"
+                    allowfullscreen
+                ></iframe>
+                <iframe 
+                    src="https://www.youtube.com/embed/IAmBqE0qeaY?mute=1" 
+                    frameborder="0"
+                    allowfullscreen
+                ></iframe>
+                <iframe 
+                    src="https://www.youtube.com/embed/pR_6T5QczPo?mute=1" 
+                    frameborder="0"
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

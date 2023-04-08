@@ -1,0 +1,132 @@
+.practice{
+    background-color: var(--mid);
+    padding: 20px 35px;
+}
+.title{
+    text-align: center;
+}
+.practice h2, h3, p, li{
+    text-align: start;
+}
+.practice ul{
+    list-style: decimal;
+}
+.general, .especifics{
+    padding: 10px;
+}
+.general h2{
+    padding-bottom: 5px;
+}
+.especifics h3{
+    padding: 5px 0;
+}
+.especifics li{
+    padding: 3px 0;
+}
+.images-t{
+    background-color: var(--secondary);
+    margin: 20px 0 0 0;
+    padding: 15px 40%;
+    border-radius: 15px;
+}
+.images{
+    background-color: var(--secondary);
+    margin: 0 0 20px 0;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.images img{
+    width: 100%;
+    max-height: 900px;
+    padding: 5px;
+    border-radius: 15px;
+    /* cursor: pointer; */
+}
+.images img:hover{
+    transform: translateY(2.5%);
+    box-shadow: 0.2em -0.2em 1em var(--primary);
+    z-index: 99;
+}
+.videos-t{
+    margin: 20px 0 0 0;
+    padding-bottom: 15px;
+}
+.videos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+.videos iframe{
+    margin: 5px 0;
+    width: 45%;
+    height: 300px;
+}
+.images-e{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.images-e img{
+    /* height: 50%; */
+    width: 45%;
+    border-radius: 15px;
+    box-shadow: 0 0 2em var(--dark);
+    margin: 15px;
+}
+
+.practice.B{
+    background-color: var(--secondary);
+}
+.practice.B .images-t{
+    background-color: var(--mid);
+}
+.practice.B .images{
+    background-color: var(--mid);
+}
+
+.practice.C{
+    background-color: var(--dark);
+}
+
+.pactice.D{
+    background-color: var(--tertiary);
+}
+.practice.D .images-t{
+    background-color: var(--dark);
+}
+.practice.D .images{
+    background-color: var(--dark);
+}
+
+@media (min-width: 750px) {
+    .images-t{
+        padding: 15px 45%;
+    }
+    .images{
+        flex-direction: row;
+    }
+    .images img{
+        width: 45%;
+    }
+
+}
+
+@media (min-width: 980px) {
+    .practice{
+        padding: 20px 80px;
+    }
+    .images-t{
+        padding: 15px 48%;
+        font-size: 30px;
+    }
+    .images img{
+        max-height: 1000px;
+        max-width: 45%;
+    }
+}
