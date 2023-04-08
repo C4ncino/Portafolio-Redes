@@ -552,7 +552,6 @@
     grid-template-rows: auto auto auto auto;
     background-color: var(--mid);
     color: var(--light);
-    padding: 10px;
 }
 .HW.F .evidence{
     width: 100%;
@@ -581,8 +580,8 @@
     height: auto;
 }
 .evidence .videoA{
-    width: 500px;
-    height: 300px;
+    width: auto;
+    height: auto;
 }
 .HW.F .tableC{
     display: flex;
@@ -592,6 +591,7 @@
 }
 .HW.F table{
     width: 100%;
+    margin-top: 20px;
 }
 .HW.F table, tr, td{
     border: 2px solid var(--light);
@@ -603,10 +603,23 @@
 .HW.F .description p{
     padding: 3px 20px;
 }
-
+.HW.F .things{
+    padding: 0 20px;
+}
+.things a{
+    color: var(--dark);
+    font-weight: 600;
+    text-decoration: none;
+}
 /*-------------------------
 ---------Responsive--------
 -------------------------*/
+@media (min-width: 525px) {
+    .evidence .videoA{
+        width: 500px;
+        height: 300px;
+    }
+}
 
 @media (min-width: 610px) {
     .matrix h3{
@@ -629,12 +642,9 @@
     .matrix .title{
         padding: 10px;
     }
-    .HW.F .evidence{
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    .evidence .imageC, .evidence .videoC{
-        width: 50%;
+    .evidence .videoA{
+        width: 400px;
+        height: 230px;
     }
 }
 @media (min-width: 900px) {
@@ -691,8 +701,24 @@
         max-width: 250px;
     }
     .HW.F{
-        grid-template-columns: auto auto;
+        grid-template-columns: 300px auto;
         grid-template-rows: auto auto auto;
+    }
+    .HW.F .title{
+        grid-area: 1 / 1 / 2 / 3;
+    }
+    .HW.F .description{
+        grid-area: 2 / 2 / 3 / 3;
+    }
+    .HW.F .exercise{
+        grid-area: 3 / 2 / 4 / 3;
+    }
+    .HW.F .tableC{
+        grid-area: 2 / 1 / 4 / 2;
+    }
+    .evidence .videoA, .evidence .image{
+        width: 500px;
+        height: 300px;
     }
 
 }
@@ -705,6 +731,9 @@
     }
     .HW.D{
         padding: 40px 100px;
+    }
+    .HW.F{
+        padding: 20px 15%;
     }
     .part{
         width: 40%;
