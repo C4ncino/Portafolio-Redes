@@ -1,0 +1,139 @@
+[
+    {
+        "element" : "Elemento",
+        "location" : "Ubicación",
+        "IP" : "IP"
+    },{
+        "element" : "Compu",
+        "location" : "Salon A",
+        "IP" : "192.168.0.1"
+    },{
+        "element" : "Compu",
+        "location" : "Salon A",
+        "IP" : "192.168.0.2"
+    },{
+        "element" : "Compu",
+        "location" : "Salon A",
+        "IP" : "192.168.0.3"
+    },{
+        "element" : "Compu",
+        "location" : "Salon A",
+        "IP" : "192.168.0.4"
+    },{
+        "element" : "Compu",
+        "location" : "Salon A",
+        "IP" : "192.168.0.5"
+    },{
+        "element" : "Compu",
+        "location" : "Salon A",
+        "IP" : "192.168.0.6"
+    },{
+        "element" : "Compu",
+        "location" : "Salon A",
+        "IP" : "192.168.0.7"
+    },{
+        "element" : "Compu",
+        "location" : "Salon A",
+        "IP" : "192.168.0.8"
+    },{
+        "element" : "Compu",
+        "location" : "Salon A",
+        "IP" : "192.168.0.9"
+    },{
+        "element" : "Compu",
+        "location" : "Salon A",
+        "IP" : "192.168.0.10"
+    },{
+        "element" : "Switch",
+        "location" : "Salon A",
+        "IP" : "N/A"
+    },{
+        "element" : "Compu",
+        "location" : "Salon B",
+        "IP" : "192.168.0.11"
+    },{
+        "element" : "Compu",
+        "location" : "Salon B",
+        "IP" : "192.168.0.12"
+    },{
+        "element" : "Compu",
+        "location" : "Salon B",
+        "IP" : "192.168.0.13"
+    },{
+        "element" : "Compu",
+        "location" : "Salon B",
+        "IP" : "192.168.0.14"
+    },{
+        "element" : "Compu",
+        "location" : "Salon B",
+        "IP" : "192.168.0.15"
+    },{
+        "element" : "Compu",
+        "location" : "Salon B",
+        "IP" : "192.168.0.16"
+    },{
+        "element" : "Compu",
+        "location" : "Salon B",
+        "IP" : "192.168.0.17"
+    },{
+        "element" : "Compu",
+        "location" : "Salon B",
+        "IP" : "192.168.0.18"
+    },{
+        "element" : "Compu",
+        "location" : "Salon B",
+        "IP" : "192.168.0.19"
+    },{
+        "element" : "Compu",
+        "location" : "Salon B",
+        "IP" : "192.168.0.20"
+    },{
+        "element" : "Switch",
+        "location" : "Salon B",
+        "IP" : "N/A"
+    },{
+        "element" : "Compu",
+        "location" : "Salon C",
+        "IP" : "192.168.0.21"
+    },{
+        "element" : "Compu",
+        "location" : "Salon C",
+        "IP" : "192.168.0.22"
+    },{
+        "element" : "Compu",
+        "location" : "Salon C",
+        "IP" : "192.168.0.23"
+    },{
+        "element" : "Compu",
+        "location" : "Salon C",
+        "IP" : "192.168.0.24"
+    },{
+        "element" : "Compu",
+        "location" : "Salon C",
+        "IP" : "192.168.0.25"
+    },{
+        "element" : "Compu",
+        "location" : "Salon C",
+        "IP" : "192.168.0.26"
+    },{
+        "element" : "Compu",
+        "location" : "Salon C",
+        "IP" : "192.168.0.27"
+    },{
+        "element" : "Compu",
+        "location" : "Salon C",
+        "IP" : "192.168.0.28"
+    },{
+        "element" : "Compu",
+        "location" : "Salon C",
+        "IP" : "192.168.0.29"
+    },{
+        "element" : "Compu",
+        "location" : "Salon C",
+        "IP" : "192.168.0.30"
+    },{
+        "element" : "Switch",
+        "location" : "Salon C",
+        "IP" : "N/A"
+    }
+]
