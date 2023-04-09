@@ -334,6 +334,10 @@ footer {
     padding-bottom: 30px;
     
     background: var(--dark);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /*-------------------------
 ---------Responsive--------

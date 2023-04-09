@@ -7,14 +7,17 @@ const HW8 = () => {
         <>
             <div className='HW G'>
                 <h1>Tarea 8</h1>
-                {data.map((question, i)=>
-                    <div key={i}>
-                        <h3>{question.question}</h3>
-                        {question.answer.map((answer, i)=>
-                            <p key={i}>{answer}</p>
-                            )}
-                    </div>
-                )}
+                <div className="questions">
+                    {data.map((question, i)=>
+                        <div className='question' key={i}>
+                            <h3>{question.question}</h3>
+                            {question.answer.map((answer, i)=>
+                                <p key={i}>{answer}</p>
+                                )}
+                        </div>
+                    )}
+                </div>
+
                 <iframe 
                 title='frame_1'
                 src='https://replit.com/@CCancino/Pruebas?lite=true'
@@ -26,6 +29,7 @@ const HW8 = () => {
                 allowTransparency='true' 
                 allowFullScreen='true' 
                 sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals' />
+
             </div>
         </>
     );
