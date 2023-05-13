@@ -1,100 +1,146 @@
-{
-    "P1" : {
-        "style" : "A",
-        "title" : "Practica 1: “Protocolo de Comunicación: Contador de pulsos y contador de tiempo”",
-        "OG" : "Conocer, identificar y comprobar el funcionamiento al desarrollar un protocolo de comunicación, en esta primera parte de un contador de pulsos y un contador de tiempo en un pulso.",
-        "OE" : ["st", "Contador de pulsos",
-                "Utilizando 1 Arduino, diseñar una función que permita enviar un número determinado de pulsos (Variación de 0 a 1) a una frecuencia específica, la función debe tener la siguiente estructura void pulsos(int cantidad, int duración). (Comprobar el correcto funcionamiento utilizando el osciloscopio).",
-                "Utilizando un segundo Arduino, diseñar una función que permita contar el número de pulsos que ha recibido (Variación de 0 a 1) y mostrarlos en el monitor serial.",
-                "Utilizando ambos arduinos, conectar un pin de los Arduinos para comprobar el funcionamiento del sistema enviando un numero de pulsos específicos a la velocidad de 1 pulso por segundo,10, 100 y 1000 pulsos por segundo.",
-                "st", "Contador de duración de pulsos",
-                "Utilizando 1 Arduino, diseñar una función que permita enviar un pulso con un tiempo en High determinado (Comprobar el correcto funcionamiento utilizando el osciloscopio)",
-                "Utilizando un segundo Arduino, diseñar una función que permita contar el tiempo de la duración de un pulso que ha recibido del primer Arduino (Variación de 0 a 1) y mostrarlos en el monitor serial."
-            ],
-        "images" : ["/P1/code_envio.png", "/P1/code_recepcion.png"],
-        "images-e" : "",
-        "videos" : ["Lyt2AeEdSIw", "0Z9hTtTfpII"]
+[
+    {
+        "style": "A",
+        "title": "Practica 1: “Protocolo de Comunicación: Contador de pulsos y contador de tiempo”",
+        "OG": "Conocer, identificar y comprobar el funcionamiento al desarrollar un protocolo de comunicación, en esta primera parte de un contador de pulsos y un contador de tiempo en un pulso.",
+        "OE": [
+            "st",
+            "Contador de pulsos",
+            "Utilizando 1 Arduino, diseñar una función que permita enviar un número determinado de pulsos (Variación de 0 a 1) a una frecuencia específica, la función debe tener la siguiente estructura void pulsos(int cantidad, int duración). (Comprobar el correcto funcionamiento utilizando el osciloscopio).",
+            "Utilizando un segundo Arduino, diseñar una función que permita contar el número de pulsos que ha recibido (Variación de 0 a 1) y mostrarlos en el monitor serial.",
+            "Utilizando ambos arduinos, conectar un pin de los Arduinos para comprobar el funcionamiento del sistema enviando un numero de pulsos específicos a la velocidad de 1 pulso por segundo,10, 100 y 1000 pulsos por segundo.",
+            "st",
+            "Contador de duración de pulsos",
+            "Utilizando 1 Arduino, diseñar una función que permita enviar un pulso con un tiempo en High determinado (Comprobar el correcto funcionamiento utilizando el osciloscopio)",
+            "Utilizando un segundo Arduino, diseñar una función que permita contar el tiempo de la duración de un pulso que ha recibido del primer Arduino (Variación de 0 a 1) y mostrarlos en el monitor serial."
+        ],
+        "images": [
+            "/P1/code_envio.png",
+            "/P1/code_recepcion.png"
+        ],
+        "images-e": "",
+        "videos": [
+            "Lyt2AeEdSIw",
+            "0Z9hTtTfpII"
+        ]
     },
-    "P2" : {
-        "style" : "B",
-        "title" : "Practica 2: “Protocolo de Comunicación: Convertidor a binario”",
-        "OG" : "Conocer, identificar y comprobar el funcionamiento al desarrollar un protocolo de comunicación, en esta tercera parte de un convertidor a binario.",
-        "OE" : ["Utilizando 1 Arduino, diseñar un sistema que permita convertir el valor analógico de un potenciómetro en un arreglo de variables que representen el numero en binario de 8 bits, de tal forma que podamos ver cada uno de los valores como salidas digitales en los pines del Arduino.",
-                "Utilizando un segundo Arduino, diseñar una función que permita convertir el valor en binario obtenido de 8 puertos digitales del Arduino en un valor entero en sistema decimal y mostrarlos en el monitor serial. Utilizar el primer Arduino para generar los valores digitales en binario y el segundo Arduino utilizarlo para decodificarlos y convertirlos en un valor decimal"
-            ],
-        "images" : ["/P2/code_envio.png", "/P2/code_recepcion.png"],
-        "images-e" : "",
-        "videos" : ["EqM4LdNnjtI"]
+    {
+        "style": "B",
+        "title": "Practica 2: “Protocolo de Comunicación: Convertidor a binario”",
+        "OG": "Conocer, identificar y comprobar el funcionamiento al desarrollar un protocolo de comunicación, en esta tercera parte de un convertidor a binario.",
+        "OE": [
+            "Utilizando 1 Arduino, diseñar un sistema que permita convertir el valor analógico de un potenciómetro en un arreglo de variables que representen el numero en binario de 8 bits, de tal forma que podamos ver cada uno de los valores como salidas digitales en los pines del Arduino.",
+            "Utilizando un segundo Arduino, diseñar una función que permita convertir el valor en binario obtenido de 8 puertos digitales del Arduino en un valor entero en sistema decimal y mostrarlos en el monitor serial. Utilizar el primer Arduino para generar los valores digitales en binario y el segundo Arduino utilizarlo para decodificarlos y convertirlos en un valor decimal"
+        ],
+        "images": [
+            "/P2/code_envio.png",
+            "/P2/code_recepcion.png"
+        ],
+        "images-e": "",
+        "videos": [
+            "EqM4LdNnjtI"
+        ]
     },
-    "P3" : {
-        "style" : "C",
-        "title" : "Practica 3: “Protocolo de Comunicación Asíncrono”",
-        "OG" : "Conocer, identificar y comprobar el funcionamiento al desarrollar un protocolo de comunicación asíncrono.",
-        "OE" : ["Utilizando 1 Arduino, diseñar un sistema que permita convertir el valor analógico de un potenciómetro en un arreglo de variables que representen el numero en binario de 8 bits, y los deposite en un arreglo [ ], Finalmente elaborar un código de programación que permita enviar los bits del arreglo en orden y en serie siguiendo las siguientes características:\n- Iniciar el envió de los datos siempre con una señal HIGH (En total se enviarán 9 datos, el primer bit en HIGH y posteriormente los 8 bits de información).\n- Enviar los datos con una duración del pulso predeterminada, ejemplo 1000 ms\n- Enviar siempre la misma cantidad de bits.",
-                "Utilizando un segundo Arduino, diseñar una función que permita adquirir el valor en bits de la señal de comunicación del Arduino anterior, la procese y la convierte en un dato decimal que finalmente enviara al monitor serial."
-            ],
-        "images" : ["/P3/code_envio.png", "/P3/code_recepcion.png"],
-        "images-e" : "",
-        "videos" : ["cYC38D5bTR0"]
+    {
+        "style": "C",
+        "title": "Practica 3: “Protocolo de Comunicación Asíncrono”",
+        "OG": "Conocer, identificar y comprobar el funcionamiento al desarrollar un protocolo de comunicación asíncrono.",
+        "OE": [
+            "Utilizando 1 Arduino, diseñar un sistema que permita convertir el valor analógico de un potenciómetro en un arreglo de variables que representen el numero en binario de 8 bits, y los deposite en un arreglo [ ], Finalmente elaborar un código de programación que permita enviar los bits del arreglo en orden y en serie siguiendo las siguientes características:\n- Iniciar el envió de los datos siempre con una señal HIGH (En total se enviarán 9 datos, el primer bit en HIGH y posteriormente los 8 bits de información).\n- Enviar los datos con una duración del pulso predeterminada, ejemplo 1000 ms\n- Enviar siempre la misma cantidad de bits.",
+            "Utilizando un segundo Arduino, diseñar una función que permita adquirir el valor en bits de la señal de comunicación del Arduino anterior, la procese y la convierte en un dato decimal que finalmente enviara al monitor serial."
+        ],
+        "images": [
+            "/P3/code_envio.png",
+            "/P3/code_recepcion.png"
+        ],
+        "images-e": "",
+        "videos": [
+            "cYC38D5bTR0"
+        ]
     },
-    "P4" : {
-        "style" : "A",
-        "title" : "Practica 4: “Wifi ESP8266 Entradas y Salidas Digitales”",
-        "OG" : "Conocer, identificar y comprobar el funcionamiento al desarrollar un protocolo de comunicación asíncrono.",
-        "OE" : [
-                " Utilizando la información e instrucciones de la presentación, configurar el IDE de Arduino para poder programar el NodeMCU directamente desde el entorno de Arduino, instalando las herramientas necesarias. ",
-                " Revisar el pinout y los GPIO disponibles para el uso del NodeMCU seleccionado. ",
-                " Desarrollar un programa de encendido de un LED mediante programación. ",
-                " Desarrollar un programa de apagado de un LED mediante programación. ",
-                " Desarrollar un programa de encendido y apagado de un LED mediante retardos. ",
-                " Desarrollar un sistema de encendido y apagado de un LED mediante el uso de botones. ",
-                " Desarrollar un sistema de encendido y apagado de un LED mediante el uso de dos botones y una condicional AND.",
-                " Desarrollar un sistema de encendido y apagado de un LED mediante el uso de dos botones y una condicional OR."
-            ],
-            "images" : ["/P4/code_P4.1.png", "/P4/code_P4.2.png", "/P4/code_P4.3.png", "/P4/code_P4.4.png"],
-        "images-e" : ["/P4/pinout.png", "/P4/esquema.png"],
-        "videos" : ["e_npYneRs-Q", "z-8LqghcisM", "IAmBqE0qeaY", "pR_6T5QczPo"]
+    {
+        "style": "A",
+        "title": "Practica 4: “Wifi ESP8266 Entradas y Salidas Digitales”",
+        "OG": "Conocer, identificar y comprobar el funcionamiento al desarrollar un protocolo de comunicación asíncrono.",
+        "OE": [
+            " Utilizando la información e instrucciones de la presentación, configurar el IDE de Arduino para poder programar el NodeMCU directamente desde el entorno de Arduino, instalando las herramientas necesarias. ",
+            " Revisar el pinout y los GPIO disponibles para el uso del NodeMCU seleccionado. ",
+            " Desarrollar un programa de encendido de un LED mediante programación. ",
+            " Desarrollar un programa de apagado de un LED mediante programación. ",
+            " Desarrollar un programa de encendido y apagado de un LED mediante retardos. ",
+            " Desarrollar un sistema de encendido y apagado de un LED mediante el uso de botones. ",
+            " Desarrollar un sistema de encendido y apagado de un LED mediante el uso de dos botones y una condicional AND.",
+            " Desarrollar un sistema de encendido y apagado de un LED mediante el uso de dos botones y una condicional OR."
+        ],
+        "images": [
+            "/P4/code_P4.1.png",
+            "/P4/code_P4.2.png",
+            "/P4/code_P4.3.png",
+            "/P4/code_P4.4.png"
+        ],
+        "images-e": [
+            "/P4/pinout.png",
+            "/P4/esquema.png"
+        ],
+        "videos": [
+            "e_npYneRs-Q",
+            "z-8LqghcisM",
+            "IAmBqE0qeaY",
+            "pR_6T5QczPo"
+        ]
     },
-    "P5" : {
-        "style" : "C",
-        "title" : "Practica 5: “Cables de Red”",
-        "OG" : "Conocer, identificar y comprobar el funcionamiento de los cables de red estructurado.",
-        "OE" : [
-                "Investigar la configuración de los cables de red estructurados: Directo y Cruzado",
-                "Investigar y explicar la forma de probar un cable de red directo y uno cruzado.",
-                "Armar 2 cables de red directos y probarlos.",
-                "Armar 2 cables de red cruzados y probarlos."
-            ],
-        "images" : "",
-        "images-e" : ["/P5/layout_recto.png", "/P5/layout_cruzado.jpeg", "/P5/como_probar.gif"],
-        "videos" : ["_jaJCsUg04E"]
+    {
+        "style": "C",
+        "title": "Practica 5: “Cables de Red”",
+        "OG": "Conocer, identificar y comprobar el funcionamiento de los cables de red estructurado.",
+        "OE": [
+            "Investigar la configuración de los cables de red estructurados: Directo y Cruzado",
+            "Investigar y explicar la forma de probar un cable de red directo y uno cruzado.",
+            "Armar 2 cables de red directos y probarlos.",
+            "Armar 2 cables de red cruzados y probarlos."
+        ],
+        "images": "",
+        "images-e": [
+            "/P5/layout_recto.png",
+            "/P5/layout_cruzado.jpeg",
+            "/P5/como_probar.gif"
+        ],
+        "videos": [
+            "_jaJCsUg04E"
+        ]
     },
-    "P6" : {
-        "style" : "B",
-        "title" : "Practica 6: “Configuración de servidor para Red Local ”",
-        "OG" : "Conocer, investigar e identificar los pasos para configurar una red local y el acceso a recursos de un equipo en red.",
-        "OE" : [
-                " En tu computadora instala XAMPP para configurar un servidor local, habilita los servicios de Apache y monta un sitio web: https://www.apachefriends.org/es/index.html",
-                " Habilita el acceso al puerto 80 desde el firewall del equipo configurado como el servidor local. ",
-                " Conéctate a una red de internet (IBERO o red personal con tu celular), Identifica la Ip de asignada al equipo servidor.",
-                " Comprueba el acceso al sitio web montado en el servidor local desde 3 dispositivos distintos (para acceder es necesario estar en la misma red y colocar en el explorador en url la dirección IP del servidor). "
-            ],
-        "images" : "",
-        "images-e" : "",
-        "videos" : ["_jaJCsUg04E"]
+    {
+        "style": "B",
+        "title": "Practica 6: “Configuración de servidor para Red Local ”",
+        "OG": "Conocer, investigar e identificar los pasos para configurar una red local y el acceso a recursos de un equipo en red.",
+        "OE": [
+            " En tu computadora instala XAMPP para configurar un servidor local, habilita los servicios de Apache y monta un sitio web: https://www.apachefriends.org/es/index.html",
+            " Habilita el acceso al puerto 80 desde el firewall del equipo configurado como el servidor local. ",
+            " Conéctate a una red de internet (IBERO o red personal con tu celular), Identifica la Ip de asignada al equipo servidor.",
+            " Comprueba el acceso al sitio web montado en el servidor local desde 3 dispositivos distintos (para acceder es necesario estar en la misma red y colocar en el explorador en url la dirección IP del servidor). "
+        ],
+        "images": "",
+        "images-e": "",
+        "videos": [
+            "_jaJCsUg04E"
+        ]
     },
-    "P7" : {
-        "style" : "A",
-        "title" : "Practica 7: “Redes de computadora con Switches y Cables”",
-        "OG" : "Conocer, identificar y comprobar el funcionamiento de una red de área local utilizando switches y Router.",
-        "OE" : [
+    {
+        "style": "A",
+        "title": "Practica 7: “Redes de computadora con Switches y Cables”",
+        "OG": "Conocer, identificar y comprobar el funcionamiento de una red de área local utilizando switches y Router.",
+        "OE": [
             "Identificar y caracterizar el funcionamiento del switch y el router. ",
             "Elaborar una red, utilizando la asignación automática de IP, seleccionado el tipo de cable adecuado y un switch conectando mínimo 3 computadoras y una con servicios de servidor. (Comprueba que es posible encontrar dispositivos en la red, puedes usar el comando PING, y comprueba el acceso a la página web del servidor) ",
             "Elaborar una red, utilizando la asignación automática de IP, seleccionado el tipo de cable adecuado y un router conectando mínimo 3 computadoras (alámbrica o inalámbricamente) y una con servicios de servidor. (Comprueba que es posible encontrar dispositivos en la red, puedes usar el comando PING, y comprueba el acceso a la página web del servidor) ",
             "Une ambas Redes, utilizando la asignación automática de IP, seleccionado el tipo de cable adecuado y comprueba el intercambio de archivos. "
         ],
-        "images" : "",
-        "images-e" : "",
-        "videos" : ["F63zaziFgL8", "--let84aY9Y", "E6CWsBghGA4"]
+        "images": "",
+        "images-e": "",
+        "videos": [
+            "F63zaziFgL8",
+            "--let84aY9Y",
+            "E6CWsBghGA4"
+        ]
     }
-}
+]

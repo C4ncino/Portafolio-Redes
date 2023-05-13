@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Nabvar from './Navbar';
 import Home from './home/Home';
 import Homework from './homework/Homework';
@@ -12,47 +12,49 @@ const App = () => {
     const [page, setPage] = useState('home');
     const [localPage, setLocalPage] = useState('main');
 
-    return(
+    const pages = (page) => {
+        if (page === 'home') {
+            return (
+                <Home setPage={setPage} />
+            )
+        }
+        else if (page === 'homework') {
+            return (
+                <Homework setLocalPage={setLocalPage} />
+            )
+        }
+        else if (page === 'lab') {
+            return (
+                <Lab />
+            )
+        }
+        else {
+            page = 'home'
+            return (
+                <Home setPage={setPage} />
+            )
+        }
+    }
+
+    return (
         <>
             {localPage === 'main' ? (
                 <div className='main'>
-                    <Nabvar page={page} setPage={setPage}/>
+                    <Nabvar page={page} setPage={setPage} />
 
-                    {page === 'home'? (
-                        <Home setPage={setPage}/>
-                    ):(
-                        <>
-                            {page === 'homework'? (
-                                <Homework setLocalPage={setLocalPage}/>
-                            ):(
-                                <>
-                                    {page === 'lab'? (
-                                        <Lab/>
-                                    ):(
-                                        <>
-                                            {page === 'projects'? (
-                                                <></>
-                                            ):(
-                                                <></>
-                                            )}
-                                        </>
-                                    )}
-                                </>
-                            )}
-                        </>
-                    )}
+                    {pages(page)}
 
-                    <Footer/>
-                </div>
-            ):(
+                    <Footer />
+                </div >
+            ) : (
                 <>
                     {localPage === 't1' ? (
-                        <T1 setLocalPage={setLocalPage}/>
-                    ):(
+                        <T1 setLocalPage={setLocalPage} />
+                    ) : (
                         <>
                             {localPage === 't2' ? (
-                                <T2 setLocalPage={setLocalPage}/>
-                            ):(
+                                <T2 setLocalPage={setLocalPage} />
+                            ) : (
                                 <></>
                             )}
                         </>

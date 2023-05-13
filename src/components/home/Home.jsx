@@ -1,8 +1,8 @@
-import React  from 'react';
+import React from 'react';
 import CardLenguage from './CardLenguage';
 import '../../styles/main.css';
 
-const Home = ({setPage}) => {
+const Home = ({ setPage }) => {
     const lenguages = ['C', 'C++', 'Java', 'Python', 'MySQL', 'React', 'HTML', 'CSS', 'JavaScript'];
     const dir = 'images/About/Logos/';
 
@@ -23,7 +23,7 @@ const Home = ({setPage}) => {
                 </div>
                 <h2>Lenguajes y Tecnologías</h2>
                 <div className='carrusel'>
-                    {lenguages.map( (lenguage, i) =>
+                    {lenguages.map((lenguage, i) =>
                         <CardLenguage key={i} lenguage={lenguage} img_src={dir + lenguage + '_Logo.png'} />
                     )}
                 </div>
@@ -33,13 +33,13 @@ const Home = ({setPage}) => {
                 <h1>Tareas</h1>
                 <p>En esta sección se encuentran los enlaces que te llevará a la página dedicada a mis tareas de la materia teórica y las prácticas del laboratorio.</p>
                 <div className='hw-btn HomeW'>
-                    <button className='btnH A' onClick={()=>{setPage('homework')}}>
+                    <button className='btnH A' onClick={() => { setPage('homework') }}>
                         <h2>Tareas</h2>
                         <img alt='Homework' src='images/HW/HW-A.png' />
                     </button>
                 </div>
                 <div className='hw-btn Lab'>
-                    <button className='btnH B' onClick={()=>{setPage('lab')}}>
+                    <button className='btnH B' onClick={() => { setPage('lab') }}>
                         <h2>Reportes</h2>
                         <img alt='Lab' src='images/HW/Lab-A.png' />
                     </button>
@@ -49,10 +49,10 @@ const Home = ({setPage}) => {
             <div className='final-projects'>
                 <h1> Proyectos </h1>
                 <p>Mediante este enlace te redirigiras a la página de mis proyectos finales.</p>
-                <a href='proyects.html'> <button> Proyectos </button> </a>
+                <a href='https://rancho-el-moralito.vercel.app/' target='_blank' rel='noreferrer'> <button> Proyectos </button> </a>
             </div>
         </>
     );
 }
- 
+
 export default Home;
